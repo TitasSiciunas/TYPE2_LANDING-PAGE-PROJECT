@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 13 - Bootsrap responsive page</title>
+  <!-- Website tab icon -->
+  <link rel="icon" href="images/tab-logo.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"">
+  <!-- Mano CSS -->
+  <link rel=" stylesheet" href="css/main.css">
+  <!-- Bootstrap JS -->
+  <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="bg-image"
+    style="background-image: url(images/background.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
+
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- Logo -->
+          <div>
+            <img src="images/logo.png" width="45" height="34">
+          </div>
+          <a class="navbar-brand ms-3" href="#main">WASD</a>
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapse navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#main">Main</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Pagrindinė sekcija -->
+    <main id="main" style="padding-top: 50px;">
+      <div class="container text-light">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <h1 class="Display-1">Header</h1>
+            <!-- Neprikūriau savo teksto, tai palieku Lorem -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio sunt explicabo ad voluptatum
+              id, vitae soluta dolorem, accusantium iusto fugiat non nesciunt voluptates perspiciatis? Earum
+              consequuntur molestiae dolor, magnam ab eum, voluptate, cum facilis assumenda accusamus laudantium non
+              soluta similique sapiente excepturi dolorem veniam laborum! Architecto tempore eius blanditiis.</p>
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+        <div class="row justify-content-between pt-5 gx-5">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+            <h2 class="Display-2 pt-5">Header 2</h2>
+            <!-- Neprikūriau savo teksto, tai palieku Lorem -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio sunt explicabo ad voluptatum
+              id, vitae soluta dolorem, accusantium iusto fugiat non nesciunt voluptates perspiciatis? Earum
+              consequuntur molestiae dolor, magnam ab eum, voluptate, cum facilis assumenda accusamus laudantium non
+              soluta similique sapiente excepturi dolorem veniam laborum! Architecto tempore eius blanditiis.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Sekcija su kortelėmis -->
+    <section id="services" style="padding-top: 50px;">
+      <div class="container text-light text-center">
+        <h2>Our Services</h2>
+        <div class="d-flex justify-content-center pt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card text-white bg-dark">
+                <img src="images/coaching.jpg" class="card-img-top"
+                  style="width: 100%; height: 30vw; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Coaching</h5>
+                  <p class="card-text">Learn from the best coaches. Watch Pro courses or have a one on one session with your desired coach.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-white bg-dark">500+ hr VOD lessons</li>
+                  <li class="list-group-item  text-white bg-dark">Games: LoL, TFT, Valorant</li>
+                  <li class="list-group-item  text-white bg-dark">24/7 access to 500+ coaches</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-dark">
+                <img src="images/boosting.jpg" class="card-img-top"
+                  style="width: 100%; height: 30vw; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Boosting</h5>
+                  <p class="card-text">Leave your account to a Pro player to reach a desired rank, receive season rewards and more.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-white bg-dark">2500+ Pro players</li>
+                  <li class="list-group-item text-white bg-dark">A timer is available for each solo order</li>
+                  <li class="list-group-item text-white bg-dark">Rank boosts up to Challanger/Immortal</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-dark">
+                <img src="images/equipment.jpg" class="card-img-top"
+                  style="width: 100%; height: 30vw; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">Gaming Equipment</h5>
+                  <p class="card-text">Take a look at our gaming equipment that the Pros use. Everything from gaming mice, to gaming chairs</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-white bg-dark">Full setups that the Pros use</li>
+                  <li class="list-group-item text-white bg-dark">1 year warranty on all items</li>
+                  <li class="list-group-item text-white bg-dark">Customizable subscribtion boxes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Susisiekimo/Kontaktų sekcija -->
+    <section id="contact" style="padding-top: 50px;">
+      <div class="container text-light">
+        <h2 class="text-center">Conact Us</h2>
+        <form class="my-3">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="mb-2">First Name</label>
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="mb-2">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="col">
+              <label for="email" class="mb-2">Email</label>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div>
+              <label for="selectCategory" class="mb-2">Categories</label>
+              <select class="form-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div>
+              <label for="formTextarea" class="form-label mb-2">Your message</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="text-center my-5">
+              <button type="button" class="btn btn-primary">Confirm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 border-top bg-light">
+      <p class="col-md-4 mb-0 text-muted">&copy 2021 WASD</p>
+
+      <div>
+        <img src="images/logo-black.png" width="45" height="34">
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted"><i class="bi bi-twitter"></i></a></li>
+        <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted"><i class="bi bi-instagram"></i></a></li>
+        <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted"><i class="bi bi-youtube"></i></a></li>
+        <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted"><i class="bi bi-twitch"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
